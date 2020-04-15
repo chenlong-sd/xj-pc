@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.Read_bg{
+    width: 100%;
+    height: 3rem;
+}
+.flex_between{
+    display: flex;
+    justify-content: space-between;
+}
+.f_dv{
+    font-size: 0.15rem;
+    font-weight: bold;
+}
+.b_dv{
+    width: 0.6rem;
+    height: 0.07rem;
+    border-radius: 0.35rem;
+    background: #FFC020;
+}
+.list_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.12rem;
+    background: #2DAEF0;
+    border-radius: 0.15rem;
+    width: 1rem;
+    height: 0.3rem;
+    color: white;
+}
+.Read_bi{
+    width: 0.12rem;
+    height: 0.12rem;
+    margin-right: 0.06rem;
+}
+.pd{
+    padding: 0.2rem 0.12rem;
+    background: #F0FEFE;
+    border-radius: 0.15rem;
+    position: absolute;
+    top: 2.3rem;
+    width: calc( 100% - 0.24rem);
+}
+.s_img{
+    position: absolute;
+    width: 0.12rem;
+    height: 0.12rem;
+    left: 0.2rem
+}
+.tag_bor{
+    color: #30C4DF;
+    padding-bottom: 0.15rem;
+    border-bottom: #30C4DF solid 0.03rem;
+    font-size: 0.15rem;
+}
+
+.flex_start {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.flex_end {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flex_center {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+}
+
+.flex_around {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex_between {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex_warp {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.flex_items {
+    align-items: center;
+}
+.like{
+    width: 0.12rem;
+    height: 0.12rem;
+}
+.list{
+    width: 45%;
+    border-radius: 0.05rem;
+    background: white;
+    margin-top: 0.1rem ;
+    margin-left: 0.1rem ;
+}
+video{
+    width:100%;
+    /*height: 1.2rem;*/
+}
+.bofang{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 0.34rem;
+    height: 0.34rem;
+}
+.text{
+    font-size: 0.13rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 0.1rem;
+    line-height: 0.2rem;
+}
+.img{
+    width: 0.225rem;
+    height: 0.225rem;
+    border-radius: 50%;
+    margin-right: 0.1rem;
+}
+.list_dv{
+    padding:0.1rem;
+}
+

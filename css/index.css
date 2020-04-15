@@ -1,0 +1,210 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.dv{
+    background-image: url("../img/bg.png");
+    width: 100%;
+    height: 6.7rem;
+    background-size: 100% 100%;
+}
+.fx{
+    width: 0.13rem;
+    height: 0.13rem;
+}
+.fx_dv{
+    width: 0.6rem;
+    height: 0.32rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 0.16rem  0  0  0.16rem;
+    position: absolute;
+    right: 0;
+    z-index: 999;
+    top:4.6rem;
+}
+.video_dv{
+    position: absolute;
+    top: 2.55rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+video{
+    width: 3.3rem;
+    height: 2rem;
+}
+.video_img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    width: 0.46rem;
+    height: 0.46rem;
+}
+.title{
+    position: absolute;
+    top: 4.9rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3rem;
+    height: 0.64rem;
+}
+.x_img{
+    width: 1.44rem;
+    height: 0.58rem;
+}
+.box{
+    display: flex;
+    position: absolute;
+    top: 5.6rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.bg{
+    position: relative;
+}
+.list{
+    width: 100%;
+    background: #5ed395;
+    position: absolute;
+    top: -0.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 40;
+    padding-bottom: 0.9rem;
+}
+.list_box{
+    background: #F2FFF9;
+    padding: 0.2rem;
+    width: calc(3.45rem - 0.4rem);
+    position: relative;
+    margin-left: 0.16rem;
+}
+.f_dv{
+    font-size: 0.15rem;
+    font-weight: bold;
+}
+.b_dv{
+   width: 0.6rem;
+    height: 0.07rem;
+    border-radius: 0.35rem;
+    background: #FFC020;
+}
+.bi{
+    width: 0.12rem;
+    height: 0.12rem;
+}
+.list_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.12rem;
+    background: #def1fd;
+    border-radius: 0.15rem;
+    width: 1rem;
+    height: 0.3rem;
+}
+.flex_between{
+    display: flex;
+    justify-content: space-between;
+}
+.list_img{
+    width: 0.35rem;
+    height: 0.35rem;
+    border-radius: 50%;
+}
+.nice{
+    width: 0.18rem;
+    height: 0.18rem;
+    margin-top: 0.05rem;
+}
+.list_dv{
+    height: 0.4rem;
+    width: 0.4rem;
+    border-radius: 50%;
+    border: 0.005rem solid #C9C9C9;
+    font-size: 0.1rem;
+    text-align: center;
+}
+.bor{
+    padding: 0.16rem 0;
+    border-bottom: #30C28D dashed 0.005rem;
+}
+.book{
+    width: 0.62rem;
+    height: 0.42rem;
+    position: absolute;
+    right: 0;
+    top: -0.6rem;
+    z-index: 200;
+}
+.l_book{
+    position: absolute;
+    width: 0.34rem;
+    height: 0.4rem;
+    right: 0;
+    top: 1rem;
+    z-index: 50;
+}
+.mini_book{
+    position: absolute;
+    width: 0.16rem;
+    height: 0.2rem;
+    left: 0;
+    top: 0.6rem;
+    z-index: 50;
+}
+.left_book{
+    position: absolute;
+    width: 0.34rem;
+    height: 0.4rem;
+    left: -0.2rem;
+    top: 2.4rem;
+    z-index: 50;
+}
+.top{
+    width: 3.45rem;
+    height: 0.1rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 180;
+}
+.bom{
+    width: 3.45rem;
+    height: 0.1rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 180;
+}
+.mt20{
+    background: #F2FFF9;
+    padding: 0.2rem;
+    width: calc(3.45rem - 0.4rem);
+    margin-top: 0.2rem;
+    position: relative;
+    margin-left: 0.16rem;
+}
+.txt{
+    font-size: 0.12rem;
+    margin-top: 0.1rem;
+}
+.max_book{
+    width: 0.96rem;
+    height: 0.72rem;
+    position: absolute;
+    right: 0;
+    bottom: 0.7rem;
+    z-index: 300;
+}
+.bottom{
+    width: 100%;
+    height: 0.95rem;
+    position: absolute;
+    bottom: 0;
+}

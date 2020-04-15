@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0," name="viewport"/>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="../css/activity.css" rel="stylesheet">
+</head>
+<body>
+<script src="../js/vue.js"></script>
+<script src="../js/rem.js"></script>
+<div id="index">
+        <img src="../img/activity_bg.png" alt="" class="img">
+        <div class="dv">
+            <div class="flex_start list" v-for="(item,index) in list">
+                <img src="../img/activity_bg.png" alt="" class="list_img">
+                <div>
+                    <div class="txt">
+                        签到领取积分，好礼赚不
+                        停等你来签到啦~
+                    </div>
+                    <div class="time_dv flex_start flex_items">
+                        <img src="../img/time.png" alt="" class="time">
+                        <div>已结束 2019.6.1~2020.4.1</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="../img/activity_bom.png" alt="" class="activity_bom">
+</div>
+<script>
+    var vm = new Vue({
+        el: '#index',
+        data() {
+            return {
+                list: [1, 2, 3, 4]
+            }
+        },
+        methods: {},
+        mounted() {
+
+        }
+    })
+</script>
+</body>
+</html>

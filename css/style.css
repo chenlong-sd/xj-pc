@@ -1,0 +1,233 @@
+
+body,html{
+    font-size: .16rem;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+[v-cloak]{
+    display: none;
+}
+i{
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+img{
+    width: 100%;
+    display: inline-block;
+    height:auto;
+}
+a{
+    margin: 0;
+    padding: 0;
+}
+p{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+a:active{
+    background-color: transparent;
+  }
+/*  * box布局 */
+.flex_start {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.flex_end {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flex_center {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.flex_around {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex_between {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex_warp {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+.noTime{
+    color:#999;
+    font-size: 26rpx;
+}
+
+
+/* 红包 */
+.envelopes{
+    position: fixed;
+    z-index: 999;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.6);
+}
+.envelopes .envelopes_div{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: calc(100vw - 1.3rem);
+}
+.envelopes .envelopes_div i {
+    width: 100%;
+}
+.envelopes_num{
+    position: absolute;
+    top:1.19rem;
+    text-align: center;
+    left: 0;width: 100%;
+}
+.envelopes_num .envelopes_tips{
+    font-size: .15rem;
+    color:#fff;
+}
+.envelopes_num .monye{
+    margin-top:.1rem;
+    font-size: .43rem;
+    color:#fff;
+}
+/* 转发弹窗 */
+.forwarding_window{
+    position: fixed;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 99;
+}
+.forwarding_window>i{
+    position: absolute;
+    top:.6rem;
+    width: 1.5rem;
+    right: .2rem;
+}
+
+/* 弹窗 */
+#bg_img{
+    position: fixed;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,.4);
+    z-index: 999;
+    display:none;
+}
+#bg_img i{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform:  translate(-50%,-50%);
+    width: 80%;
+}
+/* 抱歉弹窗 */
+#bg_img_div{
+    position: fixed;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,.4);
+    z-index: 998;
+    /* display:none; */
+}
+#bg_img_div .bg_text_div{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform:  translate(-50%,-50%);
+    width: 80%;
+    background: #fff;
+    border-radius: .1rem;
+    padding: .1rem ;
+}
+
+
+#bg_img_div .bg_text_div .bg_text{
+    width: 90%;
+    margin: 0 auto;
+    font-size: .14rem;
+    padding: .2rem;
+    color:#1a1a1a;
+}
+#bg_img_div .bg_text_div .bg_text .da{
+    font-size: .18rem;
+    margin: .04rem 0;
+    font-weight: bold;
+}
+#bg_img_div .bg_text_div .bg_buttom{
+    text-align: center;
+    color:#fff;
+    font-size: .16rem;
+
+}
+#bg_img_div .bg_text_div .bg_buttom .bg_a{
+    width: 50%;
+    height: .44rem;
+    margin: .1rem auto;
+    background: #4EA651;
+    border-radius: .2rem;
+}
+
+/* 彩蛋弹窗 */
+#menu_img{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 998;
+    background: rgba(0,0,0,.5);
+}
+#menu_img>i{
+    width: 2.5rem;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#menu_img .menu_h4{
+    position: absolute;
+    top:.26rem;
+    line-height: 1.1em;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: .28rem;
+    color:#FFFFFF;
+    white-space: nowrap;
+    font-style: normal;
+    font-weight: bold;
+
+}

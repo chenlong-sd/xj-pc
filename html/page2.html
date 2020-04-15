@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+    <title>助力点亮 </title>
+    <link rel="stylesheet prefetch" href="../css/style.css?v=1">
+</head>
+<style>
+
+    body,
+    html {
+            padding: 0;
+            background: url('../img/bg_x.png') no-repeat;
+            background-size: 100% 100%;
+            min-height: 100vh;
+          
+        }
+        .head_box{
+            display: flex;
+            width: 3.3rem;
+            height: 0.84rem;
+            margin: 0 auto;
+            padding-top: 0.59rem;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 0.13rem;
+        }
+        .head_img{
+            width: 0.54rem;
+            height:0.54rem;
+            border-radius: 50%;
+            overflow: hidden;
+            background: #000;
+            margin-right: .17rem;
+        }
+        .head_box_ri{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        .head_name{
+            font-size: .15rem;
+            color: #2C3E3C;
+            margin-bottom: 0.1rem;
+        }
+        .head_btns{
+            display: flex;
+        }
+        .head_btn{
+            border: 1px solid #7F9C9E;
+            border-radius: 0.065rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 1rem;
+            height: 0.28rem;
+            color: #7F9C9E;
+            font-size: .13rem;
+            margin-right: 0.1rem;
+        }
+        .head_btn img{
+            width: .14rem;
+            height: .14rem;
+            margin-right: .055rem;
+        }
+        .main_btn{
+            margin:0 auto;
+            margin-top: 3.56rem;
+            width: 2.71rem;
+            height: 0.65rem;
+        }
+        .pepole{
+            display: flex;
+            align-items: center;
+            width: 2.71rem;
+            margin:0 auto;
+            margin-top: 0.12rem;
+        }
+        .user_imgs{
+            position: relative;
+        }
+        .user_img{
+            display: inline-block;
+            width: 0.33rem;
+            height: 0.33rem;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .img2{
+            position: absolute;
+            left: 0.2rem;
+            z-index: 5;
+        }
+        .img3{
+            position: absolute;
+            left: 0.44rem;
+            z-index: 10;
+        }
+        .user_font{
+            font-size: 0.16rem;
+            font-weight: bold;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            margin-left: 0.55rem;
+        }
+        .user_font span{
+            font-size: 0.3rem;
+            color: #FFD143;
+        }
+        .liner{
+            position: relative;
+            margin: 0 auto;
+            margin-top: 0.22rem;
+            width: 2.95rem;
+            background-color: #32A97C;
+            border-radius: 0.04rem;
+            height: 0.08rem;
+        }
+        .liner_color{
+            position: relative;
+            background-color: #fff;
+            border-radius: 0.04rem;
+            height: 100%;
+        }
+        .liner_color span{
+            display: inline-block;
+            width: 0.13rem;
+            height: 0.13rem;
+            border-radius: 50%;
+            background-color: #fff;
+            position: absolute;
+            top: -0.025rem;
+            right: -0.05rem;
+        }
+        .liner_font{
+            position: absolute;
+            left: 40%;
+            color: #2C3E3C;
+            font-size: 0.11rem;
+            z-index: 50;
+            display: flex;
+            align-items: center;
+            top: -0.05rem;
+        }
+        .liner_font span{
+            color: #FECF01;
+        }
+</style>
+<body>
+    <div class="app">
+        <div class="head_box">
+            <div class="head_img"></div>
+            <div class="head_box_ri">
+                <div class="head_name">灰音statant</div>
+                <div class="head_btns">
+                    <div class="head_btn"><img src="../img/icon1.png" alt="">我的奖品</div>
+                    <div class="head_btn"><img src="../img/icon2.png" alt="">活动规则</div>
+                </div>
+            </div>
+        </div>
+        <div class="main_btn"><img src="../img/btn.png" alt=""></div>
+        <div class="pepole">
+            <div class="user_imgs">
+                <span class="user_img"></span>
+                <span class="user_img img2"></span>
+                <span class="user_img img3"></span>
+            </div>
+            <div class="user_font">
+                已有 <span>999</span>人参与助力
+            </div>
+        </div>
+        
+        <div class="liner">
+            <div class="liner_font">已完成<span>54%</span></div>
+            <div class="liner_color"><span class="circle"></span></div>
+        </div>
+    </div>
+    <script src="../js/rem.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script>
+
+
+    </script>
+</body>

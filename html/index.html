@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html lang="en">
+<head>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0," name="viewport"/>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <style>
+        .cool{
+            position: relative;
+            top: -3px;
+        }
+    </style>
+    <link href="../css/index.css" rel="stylesheet">
+</head>
+<body>
+<script src="../js/vue.js"></script>
+<script src="../js/rem.js"></script>
+<div id="index">
+    <div class="dv">
+        <div style="position: relative">
+            <div class="video_dv">
+                <div>
+                    <video controls src="../img/video.mp4"></video>
+                </div>
+<!--                <img alt="" class="video_img" src="../img/bofang.png">-->
+            </div>
+            <img alt="" class="title" src="../img/title.png" @click="page">
+            <div class="box">
+                <img alt="" src="../img/huodong.png" class="x_img" @click="activity">
+                <img alt="" src="../img/yuedu.png"  class="x_img" @click="Read">
+            </div>
+        </div>
+    </div>
+    <div class="bg">
+        <div class="list">
+            <div class="list_box">
+                <img alt="" class="top" src="../img/top.png">
+                <div class="flex_between">
+                    <div class="f_dv">
+                        <div style="margin-bottom: -0.05rem">我要发言</div>
+                        <div class="b_dv"></div>
+                    </div>
+                    <div class="list_btn">
+                        <img alt="" src="../img/bi.png" class="bi">
+                        <div>说点什么叭~</div>
+                    </div>
+                </div>
+                <div :key="index" class="flex_between bor" v-for="(item,index) in list">
+                    <img alt="" class="list_img" src="../img/book.png">
+                    <div>
+                        <div style="font-size: 0.12rem">xj</div>
+                        <div style="font-size: 0.13rem;font-weight: bold">希望新津可以越来越好啊，为你加油！</div>
+                    </div>
+                    <div class="list_dv">
+                        <img alt="" class="nice" src="../img/nice.png">
+                        <div class="cool">111</div>
+                    </div>
+                </div>
+                <img alt="" class="bom" src="../img/bom.png">
+            </div>
+            <div class="mt20">
+                <img alt="" class="top" src="../img/top.png" >
+                <div class="flex_between">
+                    <div class="f_dv">
+                        <div style="margin-bottom: -0.05rem">主办单位</div>
+                        <div class="b_dv"></div>
+                    </div>
+                </div>
+<!--                <div class="txt">协办单位：</div>-->
+                <div class="txt">中共新津县委宣传部</div>
+                <div class="txt">中国邮政集团有限公司四川省新津县分公司</div>
+                <img alt="" class="bom" src="../img/bom.png">
+            </div>
+            <img alt="" class="max_book" src="../img/book.png">
+            <img src="../img/bottom.png" alt="" class="bottom">
+        </div>
+        <img alt="" class="book" src="../img/r_book.png">
+        <img alt="" class="book" src="../img/r_book.png">
+        <img alt="" class="l_book" src="../img/l_book.png">
+        <img alt="" class="mini_book" src="../img/mini_book.png">
+        <img alt="" class="left_book" src="../img/left_book.png">
+    </div>
+    <div class="fx_dv">
+        <img src="../img/fenxiang.png" alt="" class="fx">
+        <div style="font-size: 0.12rem">分享</div>
+    </div>
+</div>
+<script src="../js/config.js"></script>
+<script>
+    var vm = new Vue({
+        el: '#index',
+        data() {
+            return {
+                list: [1, 2, 3, 4]
+            }
+        },
+        methods: {
+            activity () {
+                location.href=`../html/activity.html`
+            },
+            Read () {
+                location.href=`../html/Read.html`
+            },
+            page() {
+                location.href=`../html/page2.html`
+            }
+        },
+        mounted() {
+
+        }
+    })
+    // layer.msg('asdsad');
+    userCache({id:11,name:33});
+    console.log(userCache('id'));
+</script>
+</body>
+</html>

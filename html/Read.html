@@ -1,0 +1,67 @@
+<!DOCTYPE html  PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html lang="en">
+<head>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0," name="viewport"/>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="../css/Read.css" rel="stylesheet">
+</head>
+<body>
+<script src="../js/vue.js"></script>
+<script src="../js/rem.js"></script>
+<div id="index">
+    <img alt="" class="Read_bg" src="../img/Read_bg.png">
+    <div class="pd">
+        <div class="flex_between">
+            <div class="f_dv">
+                <div style="margin-bottom: -0.05rem">故事列表</div>
+                <div class="b_dv"></div>
+            </div>
+            <div class="list_btn" @click="Release">
+                <img alt="" src="../img/Read_bi.png" class="Read_bi">
+                <div>我要发布</div>
+            </div>
+        </div>
+        <div class="flex_warp">
+            <div class="list" v-for="(item,index) in list" :key="index">
+                <div style="position: relative">
+                    <video src="../img/video.mp4"></video>
+                    <img src="../img/bofang.png" alt="" class="bofang">
+                </div>
+                <div class="list_dv">
+                    <div class="text">夜是如此得冷，挺过了寒冷迎来了清晨的薄雾~</div>
+                    <div class="flex_between flex_items">
+                        <div class="flex_start flex_items" style="font-size: 0.12rem">
+                            <img src="../img/book.png" class="img">
+                            <div>马思蕊</div>
+                        </div>
+                        <div class="flex_start flex_items">
+                            <img src="../img/Read_like.png" alt="" class="like">
+                            <div style="font-size: 0.12rem">291</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var vm = new Vue({
+        el: '#index',
+        data() {
+            return {
+                list: [1, 2, 3, 4]
+            }
+        },
+        methods: {
+            Release () {
+                location.href=`../html/Release.html`
+            }
+        },
+        mounted() {
+
+        }
+    })
+</script>
+</body>
+</html>
